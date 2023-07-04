@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidenav {
+    position: fixed;
+}
+
+#mySidenav a 
+{
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 16px;
+    width: 110px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+#mySidenav a:hover 
+{
+    left: 0;
+}
+
+
+#home {
+	top: 20px;
+	background-color: #4CAF50;
+}
+
+#about {
+	top: 80px;
+	background-color: #2196F3;
+}
+
+#contactus {
+	top: 140px;
+	background-color: #f44336;
+}
+
+#product {
+	top: 200px;
+	background-color: #555
+}
+#news { 
+	top: 260px;
+	background-color: #d0e701;
+}

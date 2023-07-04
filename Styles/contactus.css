@@ -1,0 +1,66 @@
+
+.cskh h3 {
+    text-align: center;
+    font-size: 30px;
+    color: yellow;
+}
+.cskh p{
+    color: yellow;
+}
+
+#ts1 #ts2 {
+    display: inline-block;
+    border: solid 1px #ddd;
+    width: 600px;
+    margin: 0px auto;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+    
+}
+
+#tshn {
+    display: inherit;
+    float: left;
+}
+#tshcm {
+    display: inherit;
+    float: right;
+    
+}
+.text-contact{
+    text-align: center;
+    align-content: center;
+    margin-top: 24px;
+    margin-bottom: 150px;
+    color: yellow;
+}
+
+.banner {
+    background-image: 
+                    url("../Images/logo2.png");
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    }
+    
+    .banner-section{
+        text-align: center;
+        font-size: 44px;
+        color: #f6ff00;
+    }
+    
+   
+
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c24004;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    

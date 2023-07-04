@@ -1,0 +1,355 @@
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  color: #070707;
+  font-family: 'Roboto', sans-serif;
+	margin: 0;
+	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+----sản phẩm nổi bật-----
+
+.featured-products {
+  flex-wrap: wrap;
+}
+.featured-products h2 {
+  font-size: 54px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color:#c8ff03;
+}
+ 
+.product-container {
+  display: flex;
+  gap: 20px;
+}
+ 
+.product-item {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+ 
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+ 
+.product-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+ 
+.product-item .price {
+  font-weight: bold;
+}
+
+
+----product-list----
+.product-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.product-list h2 {
+  font-size: 54px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #c8ff03;
+}
+ 
+.list-container {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 900px 900px 900px;  
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+ 
+.product-item {
+  border: 1px solid #9eb000;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-wrap:  wrap;
+  color: #dfff6c;
+}
+ 
+.product-item img {
+  width: 100%;
+  height: 370px;
+}
+ 
+.product-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+  color: #e5ff00;
+}
+ 
+.product-item .price {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+
+
+
+----slideshow----
+.slideshow-container {
+max-width: 150px;
+position: relative;
+margin: auto;
+}
+
+.imgslideshow {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+/* Ẩn các slider */
+.mySlides {
+display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+color: yellow;
+font-size: 15px;
+padding: 8px 12px;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+cursor:pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: yellow;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+background-color: #423f3f;
+scale: 1.5;
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 7s;
+animation-name: fade;
+animation-duration: 7s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+----updown----------------
+
+.container-up {
+width: 500px;
+margin: auto;
+}
+/* định dạng cho button */
+#myBtn {
+display: none; /* Mặc định button sẽ được ẩn*/
+position: fixed;
+bottom: 20px;
+right: 30px; 
+z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
+border: #fff;
+outline:yellow;
+background-color: rgb(251, 255, 0);
+color: rgb(2, 2, 2);
+cursor: pointer;
+padding: 15px;
+border-radius: 50px;
+}
+
+#myBtn:hover {
+background-color: yellow;
+}
+
+
+-----brandname-----
+.brands-heading{
+text-align: center;
+padding: 20px 0 30px 50px;
+}
+.brands-heading h1{
+letter-spacing: 5px;
+font-size: 60px;
+color: #ffff00;
+text-align: center;
+}
+
+
+----news-----
+
+#list_post{
+  border: solid 1px yellow;
+  width: 600px;
+  margin: 0px auto;
+  justify-content: center;
+}
+
+#list_post h2 {
+  font-size: 54px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #c8ff03;
+}
+
+.post{
+  border: solid 2px #c8ff03;
+  margin: 10px 20px;
+  overflow: hidden;
+}
+
+.post .thumb{
+  float:left;
+  width: 200px;
+}
+
+
+.post .thumb img{
+  max-width: 100%;
+  display: inherit;
+  padding: 25px;
+}
+.post .thumb:hover :not(:hover)
+{
+  opacity: 0.3;
+}
+.post .thumb img:hover 
+{
+  scale: 1.5;
+}
+.post .infor
+{
+  margin-left: 220px;
+}
+.post .infor h3
+{
+  margin: 15px 0px 20px 0px;
+}
+.post .infor h3 a
+{
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(238, 255, 0);
+  text-transform: uppercase;
+}
+
+.post .infor p {
+  text-align: center;
+  color: rgb(238, 255, 0);
+
+}
+
+-----detail-----
+
+
+.product-view-box {
+  background: #fff;
+  position:relative;
+  min-height: 500px;
+  height: 70vh;
+  min-width: 650px;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 25px;
+  top: 50px;
+  border-radius: 5px;
+  border: 3px solid rgba(240,240,240,0.75);
+  box-shadow: 2px 3px 3px rgba(0,0,0,0.35);
+}
+.product-view-box h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fbff13;
+}
+.product-view-box h4 {
+  font-size: 1.25rem;
+}
+.col-sm-5 h3{
+  color: red;
+}
+.product-view-box p {
+  color: #fbff13;
+  padding: 0 20px 0 0;
+}
+ .product-img {
+  position:relative;
+  padding: 10px;
+  top: 25%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.product-view-box .product-previews {
+  list-style-type: none;
+  position:relative;
+  top: 25%;
+}
+.product-view-box .product-previews li {
+  float:left;
+  height: 75px;
+  width: 75px;
+  border: 1px solid #e1ff00;
+  padding: 10px;
+  margin: 1px;
+}
+.product-view-box .product-previews li img {
+  height: 50px;
+  width: 50px;
+}
+.product-view-box .btn-detail {
+  position:relative;
+  display:block;
+  background: #ff3434;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  margin: 0 auto;
+  width: 110px;
+  cursor:pointer;
+}
+.product-previews{
+  margin-bottom: 300px;
+  margin-top: -50px auto;
+  width: auto;
+}
